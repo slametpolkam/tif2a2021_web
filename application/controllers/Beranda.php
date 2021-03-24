@@ -22,6 +22,12 @@ class Beranda extends CI_Controller {
 	{
 		$data["menu"]=array("Beranda","Berita","Kontak","Tentang");
 		$data["angka"]=10;
-		$this->load->view('menuatas',$data);
+		$this->load->view('depan/atas',$data);
+		$this->load->view('depan/tengah');
+		$this->load->view('depan/bawah');
+	}
+	//fungsi untuk login slamet 24/03/2021
+	public function login(){
+		$this->load->view('belakang/login');
 	}
 }
